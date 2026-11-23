@@ -196,23 +196,6 @@ If you prefer notebooks, `notebooks_combined/` contains two self-contained noteb
 
 Attach the datasets via **Add Input**, run top to bottom, and download the final `joint_model_epochN.pt`. See [`docs/gpu_notes.md`](docs/gpu_notes.md) for practical free-tier tips (disk quota, DataLoader worker crashes, mixed precision).
 
-### Evaluation
-
-- **Re-ID (VeRi-776):** mAP and Rank-1/5/10 following the dataset's query/gallery protocol.
-- **Text retrieval (CityFlow-NL):** Mean Reciprocal Rank and Recall@5/@10. `test-tracks.json` carries no labels, so the notebooks hold out a slice of the training tracks for local MRR, and also write the official-format `submission.json`.
-
----
-
-## Results
-
-| Metric | Value |
-|---|---|
-| VeRi-776 mAP | _fill in_ |
-| VeRi-776 Rank-1 | _fill in_ |
-| CityFlow-NL held-out MRR | _fill in_ |
-| CityFlow-NL held-out Recall@5 / @10 | _fill in_ |
-
----
 
 ## Limitations
 
